@@ -1,4 +1,4 @@
-"""Building using HSX API"""
+"""Building in HSX API Sandbox using API"""
 import requests
 import json
 import pandas as pd
@@ -9,11 +9,9 @@ import pandas as pd
 
 
 folder=r"F:\HSX\HSX.txt"
-
 with open(folder) as f:
     lines = f.readlines()
 api_key= lines[0]
-
 
 url="https://api.hsx.io/patient/patients"
 headers = {
